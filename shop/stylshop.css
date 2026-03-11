@@ -44,7 +44,13 @@ body {
             text-decoration: underline;
             text-underline-offset: 4px;
         }
-
+        .container {
+            text-align: center; /* Centers the inline image within the block container */
+        }
+        .container img {
+            max-width: 100%;
+            max-height: 100%;
+        }
         main.hero {
             display: flex;
             flex-direction: column;
@@ -96,15 +102,15 @@ body {
 
         .info-grid {
             display: grid;
-            grid-template-columns: auto auto;
-            gap: 20px 50px;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px 30px;
         }
 
         .info-item {
             display: flex;
             align-items: center;
             gap: 12px;
-            font-size: 18px;
+            font-size: 25px;
         }
 
         .icon {
@@ -145,7 +151,7 @@ body {
         }
 
         .footer-right {
-            font-size: 18px;
+            font-size: 35px;
             color: #8B5A2B;
             font-weight: 600;
             text-decoration: underline;
@@ -229,7 +235,8 @@ body {
 
         .product-image {
             width: 100%;
-            height: 300px;
+            height: 80%;
+            align-items: center;
             object-fit: cover;
             background-color: #eee; /* Placeholder bg */
         }
@@ -240,14 +247,14 @@ body {
 
         .product-title {
             color: #8B5A2B;
-            font-size: 18px;
+            font-size: 35px;
             font-weight: bold;
-            margin: 0 0 10px 0;
+            margin: 0 0 0 0;
         }
 
         .product-price {
             color: #fa3b69;
-            font-size: 20px;
+            font-size: 40px;
             font-weight: bold;
             margin: 0;
         }
@@ -341,7 +348,7 @@ body {
         .review-images {
             display: grid;
             gap: 5px;
-            border-radius: 10px;
+            border-radius: 20px;
             overflow: hidden;
         }
 
@@ -352,7 +359,12 @@ body {
 
         .grid-2 {
             grid-template-columns: 1fr 1fr;
-            grid-template-rows: 200px;
+            grid-template-rows: auto;
+        }
+        .grid-1 {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
+            border-radius: 20px;
         }
 
         .review-img {
