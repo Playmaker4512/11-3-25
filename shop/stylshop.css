@@ -235,7 +235,7 @@ body {
 
         .product-image {
             width: 100%;
-            height: 80%;
+            height: 100%;
             align-items: center;
             object-fit: cover;
             background-color: #eee; /* Placeholder bg */
@@ -507,4 +507,5 @@ body {
     font-family: 'Kanit', sans-serif;
     /* Optional: set a font size for better readability */
     font-size: 16px; 
+
 }
